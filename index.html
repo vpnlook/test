@@ -1,7 +1,38 @@
-<div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
-    <div style="width:1000;overflow:hidden;border:0px"> 
-                <div style="width:1130px;overflow:hidden;margin:-60px -110px -70px -100px;">
-                    <iframe src="https://lifeofdiscipline.com/notion/habit/clmet01jp0000k50g2muiqt3r?darkTheme=0/" width=1200  height=370  scrolling="no"></iframe>
-                </div> 
-        </div> 
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* 添加水平滚动 */
+        body {
+            overflow-x: auto;
+        }
+
+        /* 包裹容器的样式，用于启用水平滚动 */
+        .scrollable-container {
+            display: flex;
+            justify-content: center;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+        /* 调整原始代码中的样式 */
+        .scrollable-content {
+            width: 1130px;
+            margin: -60px -60px -70px -110px;
+        }
+    </style>
+    <title>水平滚动示例</title>
+</head>
+<body>
+    <!-- 包裹容器，用于启用水平滚动 -->
+    <div class="scrollable-container">
+        <!-- 原始的代码内容 -->
+        <div class="scrollable-content">
+            <iframe src="https://lifeofdiscipline.com/notion/habit/clmet01jp0000k50g2muiqt3r?darkTheme=0/" width="1200" height="380" scrolling="yes"></iframe>
+        </div>
+    </div>
+</body>
+</html>
+
