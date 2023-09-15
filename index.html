@@ -2,25 +2,36 @@
 <html>
 <head>
     <style>
-        /* 使用 CSS 来隐藏外部网页的四个边各30像素 */
+        /* 设置外部容器，用于居中显示 */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* 设置 iframe 样式，隐藏外部网页的四个边各 30 像素 */
         .iframe-container {
-            width: 1070px;
-            height: 310px;
+            width: 1030px;
+            height: 370px;
             overflow: hidden;
         }
 
         .iframe-container iframe {
-            width: 1130px; /* (1030 + 30*2) */
-            height: 370px; /* (370 + 30*2) */
-            margin: -30px; /* 将外部网页的四个边各隐藏30像素 */
+            width: 1090px;
+            height: 430px;
+            margin: -30px;
         }
     </style>
 </head>
 <body>
-    <div class="iframe-container">
-        <iframe src="https://www.lifeofdiscipline.com/notion/habit/clmet01jp0000k50g2muiqt3r?darkTheme=0"></iframe>
+    <div class="container">
+        <div class="iframe-container">
+            <iframe src="https://www.lifeofdiscipline.com/notion/habit/clmet01jp0000k50g2muiqt3r?darkTheme=0"></iframe>
+        </div>
     </div>
 </body>
 </html>
-
 
