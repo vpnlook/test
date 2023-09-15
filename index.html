@@ -6,6 +6,37 @@
     </div>
 </div>
 
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    /* 初始样式，适用于正常宽度的窗口 */
+    .scrolling-div {
+        width: 300px;
+        height: 200px;
+        overflow: auto; /* 垂直滚动条 */
+        border: 1px solid #ccc;
+    }
+
+    /* 使用媒体查询，当窗口宽度小于600px时应用样式 */
+    @media screen and (max-width: 990px) {
+        .scrolling-div {
+            width: auto; /* 自适应宽度 */
+            overflow-x: auto; /* 水平滚动条 */
+        }
+    }
+</style>
+</head>
+<body>
+
+<!-- 创建一个具有滚动效果的 div -->
+<div class="scrolling-div">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    <!-- 添加更多内容以测试滚动效果 -->
+</div>
+
+</body>
+</html>
 
 
 
