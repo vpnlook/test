@@ -1,55 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>自动缩放网页</title>
-    <style>
-        /* 添加一些样式以适应自动缩放 */
-        body {
-            font-size: 16px;
-        }
 
-        #content {
-            width: 80%; /* 设置内容宽度 */
-            margin: 0 auto; /* 居中对齐 */
-        }
-    </style>
-</head>
-<body>
-    <div id="content">
-        <div style="display: flex; justify-content: center; ">
+<div style="display: flex; justify-content: center; ">
     <div style="width: 990px; overflow: auto; border: 0px; ">
         <div style="width: 1130px; margin: -60px -60px -70px -110px;">
             <iframe src="https://lifeofdiscipline.com/notion/habit/clmet01jp0000k50g2muiqt3r?darkTheme=0/" width="1200" height="380" scrolling="yes"></iframe>
         </div>
     </div>
 </div>
-        <h1>自动缩放网页示例</h1>
-        <p>这是一个可以根据窗口大小自动缩放的网页。</p>
-    </div>
-
-    <script>
-        // 定义一个函数来自动调整页面元素的大小
-        function adjustPage() {
-            var content = document.getElementById('content');
-            var windowWidth = window.innerWidth;
-
-            // 根据窗口宽度进行调整
-            if (windowWidth < 800) {
-                content.style.fontSize = '14px'; // 调整字体大小
-                content.style.width = '90%'; // 调整内容宽度
-            } else {
-                content.style.fontSize = '16px'; // 恢复默认字体大小
-                content.style.width = '80%'; // 恢复默认内容宽度
-            }
-        }
-
-        // 初始化时调整一次
-        adjustPage();
-
-        // 监听窗口大小变化事件，当窗口大小变化时重新调整页面
-        window.addEventListener('resize', adjustPage);
-    </script>
-</body>
-</html>
