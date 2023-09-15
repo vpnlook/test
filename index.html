@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         .container {
-            max-width: calc(100% - 120px); /* 自适应宽度，裁剪四个边各60px */
-            height: 400px; /* 容器高度 */
+            width: auto; /* 宽度自适应 */
+            height: auto; /* 高度自适应 */
             overflow: hidden; /* 隐藏溢出内容 */
             position: relative; /* 设置相对定位，以便裁剪内容 */
         }
@@ -15,8 +15,7 @@
             width: 100%; /* iframe 包装器宽度 */
             height: 100%; /* iframe 包装器高度 */
             position: absolute; /* 绝对定位 */
-            top: -60px; /* 向上位移60像素 */
-            left: -60px; /* 向左位移60像素 */
+            clip-path: inset(60px 60px 60px 60px); /* 裁剪四个边各60像素 */
         }
 
         iframe {
@@ -34,4 +33,5 @@
     </div>
 </body>
 </html>
+
 
