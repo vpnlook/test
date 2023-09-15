@@ -1,3 +1,15 @@
+<style>
+    /* 添加水平滚动 */
+    body {
+        overflow-x: auto;
+    }
+
+    /* 调整外部容器样式以启用水平滚动 */
+    div[style*="display: flex; justify-content: center;"] {
+        overflow-x: auto;
+        white-space: nowrap; /* 防止内部内容换行 */
+    }
+</style>
 <div style="display: flex; justify-content: center; ">
     <div style="width: 990px; overflow: hidden; border: 0px; ">
         <div style="width: 1130px; margin: -60px -60px -70px -110px;">
