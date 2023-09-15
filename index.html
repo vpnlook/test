@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         .container {
-            width: auto; /* 宽度自适应 */
+            max-width: calc(100% - 120px); /* 自适应宽度，裁剪四个边各60px */
             height: 400px; /* 容器高度 */
             overflow: hidden; /* 隐藏溢出内容 */
             position: relative; /* 设置相对定位，以便裁剪内容 */
@@ -34,3 +34,4 @@
     </div>
 </body>
 </html>
+
